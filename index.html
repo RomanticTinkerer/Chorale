@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chorale Foundation — Your privacy is no joke.</title>
+    <meta
+      name="description"
+      content="Chorale Foundation is a non-profit aiming to educate people and protest against corporations who sell your data to advertisers."
+    />
+    <link rel="icon" href="src/choral.png" type="image/png" />
+    <link rel="preconnect" href="https://api.fontshare.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/site.css" />
+  </head>
+  <body>
+    <div class="ambient" aria-hidden="true"></div>
+    <svg class="grain" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <filter id="grain">
+        <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="4" stitchTiles="stitch" />
+      </filter>
+      <rect width="100%" height="100%" filter="url(#grain)" />
+    </svg>
+
+    <a class="skip" href="#content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html">
+          <span class="logo-seal">
+            <img src="src/choral.png" alt="Chorale Foundation" width="44" height="44" />
+          </span>
+          <span class="brand-name">Chorale Foundation</span>
+        </a>
+
+        <nav class="nav-desktop" aria-label="Primary">
+          <a class="nav-btn is-active" href="index.html" aria-current="page">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M222.14,105.85l-80-80a20,20,0,0,0-28.28,0l-80,80A19.86,19.86,0,0,0,28,120v96a12,12,0,0,0,12,12H216a12,12,0,0,0,12-12V120A19.86,19.86,0,0,0,222.14,105.85ZM204,204H52V121.65l76-76,76,76Z"/></svg>
+            Home
+          </a>
+          <a class="nav-btn" href="join.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M252,120a52.06,52.06,0,0,0-52-52H160.32c-3.44-.21-52.6-4-99.46-43.3A20,20,0,0,0,28,40V200a19.8,19.8,0,0,0,11.54,18.12,19.86,19.86,0,0,0,21.32-2.81A192.92,192.92,0,0,1,144,174.47v26.2a20,20,0,0,0,8.9,16.64,11.35,11.35,0,0,0,1.39.8l14.44,7.06A20,20,0,0,0,198.37,213l11.09-41.82A52.07,52.07,0,0,0,252,120ZM52,191.63V48.4c36.17,28.07,72.17,38.1,92,41.66V150C124.17,153.52,88.17,163.55,52,191.63ZM176.39,202.2,168,198.1V172h16.4ZM200,148H168V92h32a28,28,0,1,1,0,56Z"/></svg>
+            Join the Movement
+          </a>
+          <a class="nav-btn" href="contact.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M224,44H32A12,12,0,0,0,20,56V192a20,20,0,0,0,20,20H216a20,20,0,0,0,20-20V56A12,12,0,0,0,224,44ZM193.15,68,128,127.72,62.85,68ZM44,188V83.28l75.89,69.57a12,12,0,0,0,16.22,0L212,83.28V188Z"/></svg>
+            Contact
+          </a>
+        </nav>
+
+        <button class="menu-toggle" type="button" aria-controls="site-menu" aria-expanded="false" aria-label="Open menu">
+          <span class="menu-lines" aria-hidden="true"><span></span><span></span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="overlay" id="site-menu" inert>
+      <nav aria-label="Mobile">
+        <a class="overlay-link" href="index.html">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M222.14,105.85l-80-80a20,20,0,0,0-28.28,0l-80,80A19.86,19.86,0,0,0,28,120v96a12,12,0,0,0,12,12H216a12,12,0,0,0,12-12V120A19.86,19.86,0,0,0,222.14,105.85ZM204,204H52V121.65l76-76,76,76Z"/></svg>
+          Home
+        </a>
+        <a class="overlay-link" href="join.html">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M252,120a52.06,52.06,0,0,0-52-52H160.32c-3.44-.21-52.6-4-99.46-43.3A20,20,0,0,0,28,40V200a19.8,19.8,0,0,0,11.54,18.12,19.86,19.86,0,0,0,21.32-2.81A192.92,192.92,0,0,1,144,174.47v26.2a20,20,0,0,0,8.9,16.64,11.35,11.35,0,0,0,1.39.8l14.44,7.06A20,20,0,0,0,198.37,213l11.09-41.82A52.07,52.07,0,0,0,252,120ZM52,191.63V48.4c36.17,28.07,72.17,38.1,92,41.66V150C124.17,153.52,88.17,163.55,52,191.63ZM176.39,202.2,168,198.1V172h16.4ZM200,148H168V92h32a28,28,0,1,1,0,56Z"/></svg>
+          Join the Movement
+        </a>
+        <a class="overlay-link" href="contact.html">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M224,44H32A12,12,0,0,0,20,56V192a20,20,0,0,0,20,20H216a20,20,0,0,0,20-20V56A12,12,0,0,0,224,44ZM193.15,68,128,127.72,62.85,68ZM44,188V83.28l75.89,69.57a12,12,0,0,0,16.22,0L212,83.28V188Z"/></svg>
+          Contact
+        </a>
+      </nav>
+    </div>
+
+    <main id="content">
+      <div class="wrap">
+        <section class="hero">
+          <figure class="hero-mark">
+            <img src="src/choral.png" alt="" width="520" height="520" />
+          </figure>
+          <div class="hero-copy">
+            <h1>Your privacy<br />is no <em>joke.</em></h1>
+            <p class="hero-lead">
+              Chorale Foundation is a non-profit foundation aiming to educate people and to protest against the multi-billion dollar corporations who sell your data to advertisers.
+            </p>
+            <a class="cta" href="join.html">
+              Join the Movement
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"/></svg>
+            </a>
+          </div>
+        </section>
+
+        <section class="bento" aria-label="About your data">
+          <article class="card span-8">
+            <h2>What does your data contain?</h2>
+            <p>
+              The data in question is the one you provide when registering on different sites. This includes but is not limited to:
+            </p>
+            <ol class="inventory">
+              <li><kbd>01</kbd> Profile Picture</li>
+              <li><kbd>02</kbd> Full Name</li>
+              <li><kbd>03</kbd> Date of Birth</li>
+              <li><kbd>04</kbd> Residence</li>
+              <li><kbd>05</kbd> Current (or past) workplaces</li>
+              <li><kbd>06</kbd> Phone Numbers</li>
+              <li><kbd>07</kbd> Affiliations</li>
+            </ol>
+          </article>
+
+          <article class="card span-4">
+            <h2>Why does it concern you?</h2>
+            <p>Your data is commonly</p>
+            <span class="sold">sold</span>
+            <p>
+              to advertisers for continued marketing, to show relevant ads. It is tracked, butchered and has a
+            </p>
+            <div class="stat">
+              <data value="95">95%</data>
+              <span>chance it ends up in the wrong hands.</span>
+            </div>
+            <p class="train">
+              It is also used to train language models (LLMs) and image-recognition systems (computer vision).
+            </p>
+          </article>
+
+          <article class="card span-5">
+            <h2>Okay, so how can I stop it?</h2>
+            <p>
+              You can request data removal from certain applications but there are some third-party tools that guide in data removal from the wide Internet. However, not all the approaches are plausible and do not work with 100% certainty.
+            </p>
+          </article>
+
+          <article class="card span-7">
+            <h2>What is the Chorale Foundation?</h2>
+            <p>
+              It is a non-profit based in India to educate people and to take a stand against mindless data collection and corporate greed. We aim to propagate the message of more privacy-focused approaches to take to navigate this world.
+            </p>
+            <a class="cta" href="join.html">
+              Join the Movement
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"/></svg>
+            </a>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <p>Chorale Foundation © <span data-year>2026</span> · Non-profit · India</p>
+      </div>
+    </footer>
+
+    <script src="js/site.js"></script>
+  </body>
+</html>
