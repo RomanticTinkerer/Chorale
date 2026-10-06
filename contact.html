@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — Chorale Foundation</title>
+    <meta name="description" content="Contact Chorale Foundation, a non-profit based in India." />
+    <link rel="icon" href="src/choral.png" type="image/png" />
+    <link rel="preconnect" href="https://api.fontshare.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/site.css" />
+  </head>
+  <body>
+    <div class="ambient" aria-hidden="true"></div>
+    <svg class="grain" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <filter id="grain">
+        <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="4" stitchTiles="stitch" />
+      </filter>
+      <rect width="100%" height="100%" filter="url(#grain)" />
+    </svg>
+
+    <a class="skip" href="#content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html">
+          <span class="logo-seal">
+            <img src="src/choral.png" alt="Chorale Foundation" width="44" height="44" />
+          </span>
+          <span class="brand-name">Chorale Foundation</span>
+        </a>
+
+        <nav class="nav-desktop" aria-label="Primary">
+          <a class="nav-btn" href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M222.14,105.85l-80-80a20,20,0,0,0-28.28,0l-80,80A19.86,19.86,0,0,0,28,120v96a12,12,0,0,0,12,12H216a12,12,0,0,0,12-12V120A19.86,19.86,0,0,0,222.14,105.85ZM204,204H52V121.65l76-76,76,76Z"/></svg>
+            Home
+          </a>
+          <a class="nav-btn" href="join.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M252,120a52.06,52.06,0,0,0-52-52H160.32c-3.44-.21-52.6-4-99.46-43.3A20,20,0,0,0,28,40V200a19.8,19.8,0,0,0,11.54,18.12,19.86,19.86,0,0,0,21.32-2.81A192.92,192.92,0,0,1,144,174.47v26.2a20,20,0,0,0,8.9,16.64,11.35,11.35,0,0,0,1.39.8l14.44,7.06A20,20,0,0,0,198.37,213l11.09-41.82A52.07,52.07,0,0,0,252,120ZM52,191.63V48.4c36.17,28.07,72.17,38.1,92,41.66V150C124.17,153.52,88.17,163.55,52,191.63ZM176.39,202.2,168,198.1V172h16.4ZM200,148H168V92h32a28,28,0,1,1,0,56Z"/></svg>
+            Join the Movement
+          </a>
+          <a class="nav-btn is-active" href="contact.html" aria-current="page">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M224,44H32A12,12,0,0,0,20,56V192a20,20,0,0,0,20,20H216a20,20,0,0,0,20-20V56A12,12,0,0,0,224,44ZM193.15,68,128,127.72,62.85,68ZM44,188V83.28l75.89,69.57a12,12,0,0,0,16.22,0L212,83.28V188Z"/></svg>
+            Contact
+          </a>
+        </nav>
+
+        <button class="menu-toggle" type="button" aria-controls="site-menu" aria-expanded="false" aria-label="Open menu">
+          <span class="menu-lines" aria-hidden="true"><span></span><span></span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="overlay" id="site-menu" inert>
+      <nav aria-label="Mobile">
+        <a class="overlay-link" href="index.html">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M222.14,105.85l-80-80a20,20,0,0,0-28.28,0l-80,80A19.86,19.86,0,0,0,28,120v96a12,12,0,0,0,12,12H216a12,12,0,0,0,12-12V120A19.86,19.86,0,0,0,222.14,105.85ZM204,204H52V121.65l76-76,76,76Z"/></svg>
+          Home
+        </a>
+        <a class="overlay-link" href="join.html">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M252,120a52.06,52.06,0,0,0-52-52H160.32c-3.44-.21-52.6-4-99.46-43.3A20,20,0,0,0,28,40V200a19.8,19.8,0,0,0,11.54,18.12,19.86,19.86,0,0,0,21.32-2.81A192.92,192.92,0,0,1,144,174.47v26.2a20,20,0,0,0,8.9,16.64,11.35,11.35,0,0,0,1.39.8l14.44,7.06A20,20,0,0,0,198.37,213l11.09-41.82A52.07,52.07,0,0,0,252,120ZM52,191.63V48.4c36.17,28.07,72.17,38.1,92,41.66V150C124.17,153.52,88.17,163.55,52,191.63ZM176.39,202.2,168,198.1V172h16.4ZM200,148H168V92h32a28,28,0,1,1,0,56Z"/></svg>
+          Join the Movement
+        </a>
+        <a class="overlay-link" href="contact.html">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M224,44H32A12,12,0,0,0,20,56V192a20,20,0,0,0,20,20H216a20,20,0,0,0,20-20V56A12,12,0,0,0,224,44ZM193.15,68,128,127.72,62.85,68ZM44,188V83.28l75.89,69.57a12,12,0,0,0,16.22,0L212,83.28V188Z"/></svg>
+          Contact
+        </a>
+      </nav>
+    </div>
+
+    <main id="content">
+      <div class="wrap">
+        <header class="page-hero">
+          <h1>Contact.</h1>
+          <p class="lede">Chorale Foundation is a non-profit based in India. Write to us.</p>
+        </header>
+
+        <div class="form-panel">
+          <div class="card form-card">
+            <div class="form-stamp" aria-hidden="true">
+              <img src="src/choral.png" alt="" width="88" height="88" />
+            </div>
+            <form class="form" id="contact-form" novalidate>
+              <div class="field">
+                <label for="contact-name">Full name</label>
+                <input id="contact-name" name="name" type="text" autocomplete="name" maxlength="120" required />
+                <p class="form-error" aria-live="polite"></p>
+              </div>
+              <div class="field">
+                <label for="contact-email">Email</label>
+                <input id="contact-email" name="email" type="email" autocomplete="email" maxlength="254" required />
+                <p class="form-error" aria-live="polite"></p>
+              </div>
+              <div class="field">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" maxlength="2000" required></textarea>
+                <p class="form-error" aria-live="polite"></p>
+              </div>
+              <button class="cta" type="submit">
+                Send a note
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"/></svg>
+              </button>
+              <p class="form-error form-banner" data-form-banner aria-live="polite"></p>
+              <p class="notice">
+                Your note goes to the foundation so we can write back. We keep a copy on our server.
+              </p>
+            </form>
+            <div class="success" id="contact-success" tabindex="-1">
+              <h2>Note received.</h2>
+              <p>We emailed the foundation. We'll write you at the address you gave.</p>
+              <button class="cta ghost" type="button" data-form-reset>Write another note</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <p>Chorale Foundation © <span data-year>2026</span> · Non-profit · India</p>
+      </div>
+    </footer>
+
+    <script src="js/env.js"></script>
+    <script src="js/site.js"></script>
+  </body>
+</html>

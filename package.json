@@ -1,0 +1,19 @@
+{
+  "name": "chorale-foundation",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "convex dev",
+    "sync-site": "node scripts/sync-site-url.mjs",
+    "lint": "eslint convex",
+    "typecheck": "tsc --noEmit -p convex/tsconfig.json"
+  },
+  "dependencies": {
+    "@convex-dev/resend": "^0.2.7",
+    "convex": "^1.45.0"
+  },
+  "devDependencies": {
+    "@convex-dev/eslint-plugin": "^4.0.0",
+    "typescript": "^6.0.3"
+  }
+}

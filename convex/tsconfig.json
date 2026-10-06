@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "strict": true,
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "skipLibCheck": true,
+    "noEmit": true,
+    "target": "ESNext",
+    "lib": ["ES2021"],
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "isolatedModules": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["./**/*"],
+  "exclude": ["./_generated"]
+}
