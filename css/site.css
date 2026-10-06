@@ -467,7 +467,7 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
-  padding: 0 0 6rem;
+  padding: 0 0 1.5rem;
 }
 
 .card {
@@ -551,6 +551,77 @@ main {
 
 .train {
   margin-top: 1.1rem;
+}
+
+.goals {
+  padding: 2.5rem 0 6rem;
+}
+
+.goals-intro {
+  max-width: 40rem;
+  margin-bottom: 1.5rem;
+}
+
+.kicker {
+  margin: 0 0 0.65rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.goals-intro h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  margin: 0 0 0.85rem;
+}
+
+.goals-intro p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.goal-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.goal-list kbd {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  padding: 0.15rem 0.4rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--canvas);
+  color: var(--muted);
+}
+
+.goal-list h3 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.45rem, 3vw, 1.85rem);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin: 0.85rem 0 0.65rem;
+}
+
+.goal-list .card:nth-child(1) {
+  background: var(--pale-yellow);
+}
+
+.goal-list .card:nth-child(2) {
+  background: var(--pale-blue);
+}
+
+.goal-list .card:nth-child(3) {
+  background: var(--pale-green);
 }
 
 .page-hero {
@@ -725,7 +796,15 @@ main {
   .bento {
     grid-template-columns: repeat(12, 1fr);
     gap: 1.5rem;
-    padding-bottom: 8rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .goals {
+    padding: 3.5rem 0 8rem;
+  }
+
+  .goal-list {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .span-8 { grid-column: span 8; }
